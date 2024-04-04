@@ -1,6 +1,6 @@
-.PHONY build install clean
+.PHONY: build install clean
 
-# This compiles the source-files
+# This complies the source-files
 build: personal_helpers.c personal_helpers.h
 	gcc -c personal_helpers.c -o personal_helpers.o
 	ar -rc libpersonal_helpers.a personal_helpers.o
